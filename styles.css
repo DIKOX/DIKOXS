@@ -32,7 +32,7 @@ a{
 
 .backraund{
     position: absolute;
-    background: url(/img/tatk.jpg.crdownload) no-repeat;
+    background: url(./img/tatk.jpg.crdownload) no-repeat;
     width: 1920px;
     height: 100vh;
     background-size: 200% 100%;
