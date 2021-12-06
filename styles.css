@@ -1,0 +1,293 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 15px;
+
+}
+::-webkit-scrollbar-track{
+    background: rgb(28, 108, 212);
+    
+}
+::-webkit-scrollbar-thumb{
+    background: cyan;
+    border-radius: 9px;
+    border: 3px solid blueviolet;
+}
+ul{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.backraund{
+    position: absolute;
+    background: url(../img/tatk.jpg.crdownload) no-repeat;
+    width: 1920px;
+    height: 100vh;
+    background-size: 200% 100%;
+            animation: gradient 39s ease infinite;
+        
+
+}
+
+.header{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 6;
+    
+}
+.conteiner{
+    margin: 0% auto;
+    width: 1500px;
+}
+.header-logo img{
+    width: 100px;
+}
+.header-logo{
+    position: absolute;
+    top: 20px;
+}
+.header-climn{
+    position: fixed;
+    width: 1500px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header-shapka{
+    position: relative;
+    z-index: 5;
+    width: 1455px;
+    height: 100px;
+    background-color: rgb(0 0 0 / 88%);
+    border-radius: 15px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.header-shapka>ul{
+    display: flex;
+    position: absolute;
+    right: 0px;
+    width: 1335px;
+    z-index: 1;
+}
+.header-shapka li{
+    text-align: center;
+    width: 200px;
+    list-style: none;
+    position: relative;
+}
+.header-shapka>ul>li>a{
+    color: white;
+    font-weight: 800;
+}
+.header-shapka a{
+    display: block;
+    height: 100px;
+    line-height: 20px;
+    transition: all .5s;
+    padding-top: 40px;
+        
+}
+.header-logo a{
+    padding-top: 0%;
+}
+.header-shapka a:hover:not(.header-logo>a){
+    background: rgba(255, 255, 255, 0.486);
+}
+.header-shapka>ul>li:last-child a{
+    border-radius: 10px;
+}
+.navy li{
+    width: 300px;
+}
+.header-shapka ul li ul{
+    display: none;
+    position: absolute;
+    
+}
+.header-shapka ul li ul li{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+   
+}
+.header-shapka ul li ul li:hover {
+    background-color: crimson;
+    transform: scale(7deg);
+    color: deepskyblue;
+}
+.header-shapka li:hover ul{
+    display: block;
+    background-color: rgba(246, 250, 249, 0.582);
+}
+
+.section-header{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+}
+.section-header-title{
+    font-size: 30px;
+    color: darkslateblue;
+    font-family: 'Days One', sans-serif;
+    position: relative;
+    font-size: 35px;
+    text-align: start;
+    top: -2px;
+    left: 32px;
+}
+.section-header-cont{
+    display: grid;
+    width: 1500px;;
+    height: 829px;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+}
+.section-header-img{
+    position: relative;
+    top: 125px;
+    left: 57px;
+}
+.section-header-img img{
+    width: 850px;
+}
+.text-flicker-in-glow {
+	-webkit-animation: text-flicker-in-glow 2s linear both;
+	        animation: text-flicker-in-glow 1s linear both;
+}
+
+.section-1{
+    position: relative;
+    font-family: Lobster,sans-serif;
+    color: white;
+    z-index: 2;
+    height: 1458px;
+}
+.section-1-count{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+}
+.section-1-title{
+    position: relative;
+    color: black;
+    top: 50px;
+    width: 1000px;
+    height: 300px;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.5em;
+}
+.section-1-title h1{
+    font-family: Days One,sans-serif;
+}
+.section-1-title p{
+    text-align: justify;
+    color: #2d154c;
+}
+.college-director{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 313px;
+    text-align: center;
+    background-color: #0000006b;
+    box-shadow: #545454 -3px 5px;
+}
+.direcor-img img{
+    width: 300px;
+    border: 5px solid mediumvioletred;
+
+}
+.college-director{
+    position: relative;
+}  
+.college-director ul{
+    position: relative;
+    top: 21px;
+    text-align: start;
+    line-height: 2;
+    left: 63px;
+    font-size: 17px;
+}
+.college-director a{
+    color: bisque;
+}
+.college-director a:hover{
+    color: darksalmon;
+}
+.aside-1-img{
+    margin: 37px;
+}
+.college-director>h1{
+    padding: 10px;
+
+}
+.college-director>p{
+    font-family: Comfortaa,sans-serif;
+    line-height: 2;
+
+}
+
+.college-director>.btn{
+    width: 200px;
+    height: 30px;
+    background-color: cyan;
+    border-radius: 20px;
+    border-color: darkgoldenrod;
+}
+.sc-1-img{
+    position: relative;
+    top: -355px;
+    left: 500px;
+}
+.cl-1 img{
+    width: 1010px;
+    height: 370px;
+}
+/*--------article---------- */
+.section-news{
+    position: relative;
+    width: 1500px;
+    margin: 0 auto;
+    height: 652px;
+    background-color: burlywood;
+    top: -487px;
+    text-align: center;
+    color: white;
+}
+
+.news-block{
+    width: 300px;
+    height: 200px;
+    background-color: black;
+}
+.news-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    grid-template-rows: 1fr;
+    padding: 50px;
+
+}
